@@ -32,4 +32,25 @@ function createCar() {
 
     // Object created of name car
     var car = new ToyCar(color, brand, model, year, price, isElectric, isRemoteControlled, speed, numDoors, numWheels);
+
+    // passing the object to display car function to display output
+    displayCar(car);
+  }
+
+  function displayCar(car) {
+    var carContainer = document.getElementById("car-container");
+    var carElement = document.createElement("div");
+    carElement.classList.add("car");
+    carElement.style.backgroundColor = car.color;
+
+    var leftWheel = document.createElement("div");
+    leftWheel.classList.add("wheel", "left-wheel");
+
+    var rightWheel = document.createElement("div");
+    rightWheel.classList.add("wheel", "right-wheel");
+
+    carElement.appendChild(leftWheel);
+    carElement.appendChild(rightWheel);
+
+    carContainer.appendChild(carElement);
   }
