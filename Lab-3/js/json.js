@@ -50,6 +50,8 @@ function showTopFlavors(jsonObj) {
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
      h2.textContent = topFlavors[i]["name"];
+     p1.textContent = 'Calories: ' + topFlavors[i].calories;
+     p2.textContent = 'Type: ' + topFlavors[i].type;
      image.setAttribute("src","https://github.com/HastiDonga25/COMP1073---Client-side-Javascript/tree/main/Lab-3/images/" + topFlavors[i].image);   
 
         // STEP 10g: Build a loop for the ingredients array in the JSON

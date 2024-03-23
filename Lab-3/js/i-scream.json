@@ -25,6 +25,28 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name" : "Dreamy Double Chocolate",
+      "calories" : 450,
+      "type" : "ice cream",
+      "ingredients" : [
+        "chocolate ",
+        "chocolate chunks",
+        "double cream"
+      ],
+      "image" : "double-chocolate.jpg"
+    },
+    {
+      "name" : "Berry Bliss",
+      "calories" : 300,
+      "type" : "sorbet",
+      "ingredients" : [
+        "mixed fruit",
+        "lemon juice",
+        "sugar"
+      ],
+      "image" : "mango.svg"
     }
   ]
 }
