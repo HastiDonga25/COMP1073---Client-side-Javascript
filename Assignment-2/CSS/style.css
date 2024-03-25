@@ -1,30 +1,64 @@
+.form-group {
+  margin-bottom: 15px;
+}
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  #smoothieOutput {
-    margin-top: 20px;
-  }
-  
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(7, 125, 84, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.label{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(6, 79, 79);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+.form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.output {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+#smoothieOutput {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 2px 0px;
+}
+#smoothieImage {
+  margin-top: 20px;
+}
+#billOutput {
+  margin-top: 20px;
+  padding: 10px 0px;
+  font-size: 16px;
+}

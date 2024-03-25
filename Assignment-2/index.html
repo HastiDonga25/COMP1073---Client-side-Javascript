@@ -9,45 +9,57 @@
 <body>
 <div class="container">
   <h1>The Smoothie Machine</h1>
-  <form id="smoothieForm">
-    <div class="form-group">
-      <label for="flavor">Flavor:</label>
-      <select id="flavor" required>
-        <option value="">Select a flavor</option>
-        <option value="strawberry">Strawberry</option>
-        <option value="banana">Banana</option>
-        <option value="mango">Mango</option>
-      </select>
+  <div class="grid-container">
+    <form id="smoothieForm" class="form">
+      <div class="form-group">
+        <label for="flavor" class="label">Flavor:</label>
+        <select id="flavor" required>
+          <option value="">Select a flavor</option>
+          <option value="Strawberry">Strawberry (2$)</option>
+          <option value="Banana">Banana (1.5$)</option>
+          <option value="Mango">Mango (2.5$)</option>
+          <option value="Pineapple">Pineapple (2$)</option>
+          <option value="Kiwi">Kiwi (3.5$)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="size"class="label">Size:</label>
+        <select id="size" required>
+          <option value="">Select a size</option>
+          <option value="Small">Small (2$)</option>
+          <option value="Medium">Medium (2.5$)</option>
+          <option value="Large">Large (3.5$)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="toppings" class="label">Toppings:</label><br>
+        <input type="checkbox" id="nuts" name="toppings" value="Nuts">
+        <label for="nuts">Nuts (0.5$)</label>
+        <input type="checkbox" id="berries" name="toppings" value="Berries">
+        <label for="berries">Berries (1$)</label><br>
+        <input type="checkbox" id="Chocolate-chips" name="toppings" value="Chocolate-chips">
+        <label for="chochlate-chips">Chocolate Chips (1$)</label><br>
+        <input type="checkbox" id="mango-jelly" name="toppings" value="Mango-jelly">
+        <label for="mango-jelly">Mango Jelly (0.5$)</label>    
+      </div>
+      <div class="form-group">
+        <label for="base" class="label">Base Liquid:</label>
+        <select id="base" required>
+          <option value="">Select a base</option>
+          <option value="Milk">Milk</option>
+          <option value="Almond-milk"> Almond Milk</option>
+          <option value="Yogurt">Yogurt</option>
+          <option value="Coconut water">Coconut Water</option>
+        </select>
+      </div>
+      <button class="btn" type="submit">Order</button>
+    </form>
+    <div id="outputContainer" class="output">
+      <div id="smoothieOutput"></div>
+      <div id="smoothieImage"></div>
+      <div id="billOutput"></div>
     </div>
-    <div class="form-group">
-      <label for="size">Size:</label>
-      <select id="size" required>
-        <option value="">Select a size</option>
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="toppings">Toppings:</label><br>
-      <input type="checkbox" id="nuts" name="toppings" value="nuts">
-      <label for="nuts">Nuts</label><br>
-      <input type="checkbox" id="berries" name="toppings" value="berries">
-      <label for="berries">Berries</label><br>
-      <!-- Add more topping options here -->
-    </div>
-    <div class="form-group">
-      <label for="base">Base Liquid:</label>
-      <select id="base" required>
-        <option value="">Select a base</option>
-        <option value="milk">Milk</option>
-        <option value="yogurt">Yogurt</option>
-        <option value="coconut water">Coconut Water</option>
-      </select>
-    </div>
-    <button class="btn" type="submit">Order</button>
-  </form>
-  <div id="smoothieOutput"></div>
+  </div>
 </div>
 <script src="./JS/java.js"></script>
 </body>
